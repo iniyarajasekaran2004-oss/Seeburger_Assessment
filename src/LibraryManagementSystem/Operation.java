@@ -48,8 +48,8 @@ public class Operation {
 
     // Count total & issued books
     public static void countBooks(Set<Book> books) {
-        long total = books.size();
-        long issued = books.stream().filter(b -> !b.isAvailable()).count();
+        int total = books.size();
+        int issued = (int) books.stream().filter(b -> !b.isAvailable()).count();
 
         System.out.println("Total Books: " + total);
         System.out.println("Issued Books: " + issued);

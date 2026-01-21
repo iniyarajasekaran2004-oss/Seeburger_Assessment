@@ -1,6 +1,6 @@
 package src.LibraryManagementSystem;
 
-    public class IssueException extends Exception {
+public class IssueException extends Exception {
         IssueException (String Msg){
             super(Msg);
         }
