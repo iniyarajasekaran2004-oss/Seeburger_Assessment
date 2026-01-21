@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class Operation {
 
-    // Issue Book
+    // Issue Books
     public static void issueBook(int bookId, Set<Book> books) throws IssueException {
         Optional<Book> bookOpt = books.stream()
                 .filter(b -> b.getBookId() == bookId)
@@ -23,7 +23,7 @@ public class Operation {
         book.setAvailable(false);
     }
 
-    // Return Book
+    // Return Books
     public static void returnBook(int bookId, Set<Book> books) {
         books.stream()
                 .filter(b -> b.getBookId() == bookId)

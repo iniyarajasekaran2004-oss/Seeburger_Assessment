@@ -37,7 +37,7 @@ public void setAvailable(boolean available){
     @Override
     public String toString() {
         return "Book{" +
-                " bookId=" + bookId +
+                " BookId=" + bookId +
                 ", title='" + title + '\'' +
                 ",author='" + author + '\'' +
                 ", available=" + available +

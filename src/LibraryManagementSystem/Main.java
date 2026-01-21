@@ -9,7 +9,7 @@ public class Main {
         System.out.println("Add book=================================");
         library.addBook(new Book(1004, "Language", "Thowfic", true));
         library.getBooks().forEach(System.out::println);
-        System.out.println("Issued Book=================================");
+        System.out.println("Issued Book================================");
         int bookId = 1002;
         try {
             Operation.issueBook(bookId, library.getBooks());
